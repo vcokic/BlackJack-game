@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECBAFEF3-72E6-4B43-B15D-D482A22413F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OTTER</RootNamespace>
+    <AssemblyName>OTTER</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\OTTER.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BGL.Designer.cs">
+      <DependentUpon>BGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="Casino.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="GameClass.cs" />
+    <Compile Include="GameOptions.cs" />
+    <Compile Include="Sensing.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprite.cs" />
+    <EmbeddedResource Include="BGL.resx">
+      <DependentUpon>BGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backgrounds\gameBackground.jpg" />
+    <Content Include="backgrounds\gameOverBackground.jpg" />
+    <Content Include="backgrounds\startBackground.jpg" />
+    <Content Include="backgrounds\youWonbackground.jpg" />
+    <Content Include="sprites\back.png" />
+    <Content Include="sprites\ClubsAce.png" />
+    <Content Include="sprites\ClubsEight.png" />
+    <Content Include="sprites\ClubsFive.png" />
+    <Content Include="sprites\ClubsFour.png" />
+    <Content Include="sprites\ClubsJack.png" />
+    <Content Include="sprites\ClubsKing.png" />
+    <Content Include="sprites\ClubsNine.png" />
+    <Content Include="sprites\ClubsQueen.png" />
+    <Content Include="sprites\ClubsSeven.png" />
+    <Content Include="sprites\ClubsSix.png" />
+    <Content Include="sprites\ClubsTen.png" />
+    <Content Include="sprites\ClubsThree.png" />
+    <Content Include="sprites\ClubsTwo.png" />
+    <Content Include="sprites\DiamondsAce.png" />
+    <Content Include="sprites\DiamondsEight.png" />
+    <Content Include="sprites\DiamondsFive.png" />
+    <Content Include="sprites\DiamondsFour.png" />
+    <Content Include="sprites\DiamondsJack.png" />
+    <Content Include="sprites\DiamondsKing.png" />
+    <Content Include="sprites\DiamondsNine.png" />
+    <Content Include="sprites\DiamondsQueen.png" />
+    <Content Include="sprites\DiamondsSeven.png" />
+    <Content Include="sprites\DiamondsSix.png" />
+    <Content Include="sprites\DiamondsTen.png" />
+    <Content Include="sprites\DiamondsThree.png" />
+    <Content Include="sprites\DiamondsTwo.png" />
+    <Content Include="sprites\end.jpg" />
+    <Content Include="sprites\HeartsAce.png" />
+    <Content Include="sprites\HeartsEight.png" />
+    <Content Include="sprites\HeartsFive.png" />
+    <Content Include="sprites\HeartsFour.png" />
+    <Content Include="sprites\HeartsJack.png" />
+    <Content Include="sprites\HeartsKing.png" />
+    <Content Include="sprites\HeartsNine.png" />
+    <Content Include="sprites\HeartsQueen.png" />
+    <Content Include="sprites\HeartsSeven.png" />
+    <Content Include="sprites\HeartsSix.png" />
+    <Content Include="sprites\HeartsTen.png" />
+    <Content Include="sprites\HeartsThree.png" />
+    <Content Include="sprites\HeartsTwo.png" />
+    <Content Include="sprites\hit.jpg" />
+    <Content Include="sprites\playAgain.jpg" />
+    <Content Include="sprites\SpadesAce.png" />
+    <Content Include="sprites\SpadesEight.png" />
+    <Content Include="sprites\SpadesFive.png" />
+    <Content Include="sprites\SpadesFour.png" />
+    <Content Include="sprites\SpadesJack.png" />
+    <Content Include="sprites\SpadesKing.png" />
+    <Content Include="sprites\SpadesNine.png" />
+    <Content Include="sprites\SpadesQueen.png" />
+    <Content Include="sprites\SpadesSeven.png" />
+    <Content Include="sprites\SpadesSix.png" />
+    <Content Include="sprites\SpadesTen.png" />
+    <Content Include="sprites\SpadesThree.png" />
+    <Content Include="sprites\SpadesTwo.png" />
+    <Content Include="sprites\stand.jpg" />
+    <Content Include="sprites\start.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
